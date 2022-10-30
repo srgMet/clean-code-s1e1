@@ -34,19 +34,19 @@ var createNewTaskElement=function(taskString){
 
     label.innerText=taskString;
     label.className="task";
-    listItem.className ="tasks-item"
+    listItem.className ="task-item"
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className = "task task-text";
-    checkBox.className = "task-checkbox";
-    label.className = "task task-label";
+    editInput.className = "task task-item__text";
+    checkBox.className = "task-item__checkbox";
+    label.className = "task task-item__label";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className ="edit btn";
+    editButton.className ="task-item__btn-edit btn";
 
 
-    deleteButton.className ="btn-del btn";
+    deleteButton.className ="task-item__btn-del btn";
     deleteButtonImg.className ="btn-del__pic"
     deleteButtonImg.src="./remove.svg";
     deleteButton.appendChild(deleteButtonImg);
@@ -87,8 +87,8 @@ var editTask=function(){
     var listItem=this.parentNode;
 
     var editInput=listItem.querySelector("input[type=text]");
-    var label = listItem.querySelector(".task-label");
-    var editBtn=listItem.querySelector(".edit");
+    var label = listItem.querySelector(".task-item__label");
+    var editBtn = listItem.querySelector(".task-item__btn-edit");
     var containsClass=listItem.classList.contains("edit-mode");
     //If class of the parent is .editmode
     if(containsClass){
@@ -160,8 +160,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("button.edit");
-  var deleteButton = taskListItem.querySelector("button.btn-del");
+  var editButton = taskListItem.querySelector("button.task-item__btn-edit");
+  var deleteButton = taskListItem.querySelector("button.task-item__btn-del");
 
 
     //Bind editTask to edit button.
