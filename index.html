@@ -8,19 +8,19 @@
 </head>
 
 <body class="container">
-  <div class="header">
-    <img class="header-img" src="./eisenhower-matrix.jpg">
+  <header class="header">
+    <img class="header-img" src="./eisenhower-matrix.jpg"  alt="pic-matrix">>
     <a class="more-inf"
       href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="main">
-    <p id="add-tasks">
+  </header>
+  <main class="main">
+    <section id="add-tasks">
       <label for="new-task "  class="add-task-title task-label">Add Item</label>
     <div class="task-wrapper">
       <input id="new-task" class="task add-task__input task-text" type="text">
       <button class="btn">Add</button>
     </div>
-    </p>
+    </section>
     <h3 class="title">Todo</h3>
     <ul class="tasks-list" id="todo-tasks">
       <li class="tasks-item">
@@ -28,14 +28,14 @@
         <label class="task task-label">Pay Bills</label>
         <input class="task task-text"type="text">
         <button class="edit btn">Edit</button>
-        <button class="btn-del btn"><img class="btn-del__pic" src="./remove.svg"></button>
+        <button class="btn-del btn"><img class="btn-del__pic" src="./remove.svg" alt="ico-del"></button>
       </li>
       <li class="edit-mode tasks-item">
         <input class="task-checkbox" type="checkbox">
         <label class="task task-label">Go Shopping</label>
         <input class="task task-text" type="text" value="Go Shopping" >
         <button class="edit btn">Save</button>
-        <button class="btn-del btn"><img class="btn-del__pic" src="./remove.svg"></button>
+        <button class="btn-del btn"><img class="btn-del__pic" src="./remove.svg"  alt="ico-del"></button>
       </li>
     </ul>
     <h3 class="title">Completed</h3>
@@ -45,10 +45,10 @@
         <label class="task task-label">See the Doctor</label>
         <input class="task task-text" type="text">
         <button class="edit btn">Edit</button>
-        <button class="btn-del btn"><img class="btn-del__pic" src="./remove.svg"></button>
+        <button class="btn-del btn"><img class="btn-del__pic" src="./remove.svg"  alt="ico-del"></button>
       </li>
     </ul>
-  </div>
+  </main>
   <script src="app.js"></script>
 </body>
 
