@@ -1,22 +1,24 @@
 /* default style*/
-ul {
+.tasks-list {
   margin: 0;
   padding: 0px;
 }
 
-li, h3 {
+.tasks-item,
+.title {
   list-style: none;
 }
 
-input,button{
+input,
+button{
   outline: none;
 }
 
-ul li input[type=text] {
+.tasks-list .tasks-item .task-text{
   display: none;
 }
 
-ul li.edit-mode label {
+.tasks-list .edit-mode .task-label {
   display: none;
 }
 
@@ -38,7 +40,7 @@ ul li.edit-mode label {
   width: 100%;
 }
 
-.header .more-inf {
+.more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -82,7 +84,8 @@ ul li.edit-mode label {
 
 /* Heading */
 
-.title, .add-task-title {
+.title,
+.add-task-title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -160,7 +163,7 @@ ul li.edit-mode label {
 
 /* Completed */
 
-ul#completed-tasks label {
+#completed-tasks .task-label {
   text-decoration: line-through;
   color: #888;
 }
