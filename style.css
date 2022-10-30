@@ -13,7 +13,7 @@ input,button{
 }
 
 ul li input[type=text] {
-  display: none
+  display: none;
 }
 
 ul li.edit-mode label {
@@ -59,7 +59,7 @@ ul li.edit-mode label {
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-wrapper {
@@ -145,7 +145,7 @@ ul li.edit-mode label {
 }
 
 .tasks-item > .task-text {
-  width: 226px
+  width: 226px;
 }
 
 .btn-del__pic {
@@ -161,7 +161,7 @@ ul li.edit-mode label {
 /* Completed */
 
 ul#completed-tasks label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
