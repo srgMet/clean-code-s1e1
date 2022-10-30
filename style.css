@@ -1,153 +1,174 @@
 /* default style*/
 ul {
-    margin:0;
-    padding: 0px;
+  margin:0;
+  padding: 0px;
 }
+
 li, h3 {
-    list-style:none;
+  list-style:none;
 }
+
 input,button{
-    outline:none;
+  outline:none;
 }
 
 ul li input[type=text] {
-    display:none
+  display:none
 }
 
 ul li.edit-mode label {
-    display:none;
+  display:none;
 }
 
 /* Basic Style */
 .container {
-    background-color: #f8f8f8;
-    color: #333;
-    font-family: Lato, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
 }
+
 .header {
-    width: 500px;
-    margin: 0 auto;
-    display: block;
-    text-align: right;
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
 }
+
 .header-img {
-    width: 100%;
+  width: 100%;
 }
+
 .header .more-inf {
-    font-family: fantasy, cursive;
+  font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.main { text-align: center;
+
+  .main {
+    text-align: center;
+  }
+
 }
-}
+
 .main {
-    display: block;
-    width: 500px;
-    margin: 0 auto 0;
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
 }
+
 .task {
-    width: 56%;
-    display: inline-block;
-    flex-grow: 1
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1
 }
+
 .task-wrapper {
-    display: flex;
+  display: flex;
 }
 
 .btn {
-    background: none;
-    border: 0px;
-    color: #888;
-    font-size: 15px;
-    width: 60px;
-    font-family: Lato, sans-serif;
-    cursor: pointer;
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
 }
+
 .btn:hover {
-    color: #3a3a3a;
+  color: #3a3a3a;
 }
+
 /* Heading */
+
 .title, .add-task-title {
-    color: #333;
-    font-weight: 700;
-    font-size: 15px;
-    border-bottom: 2px solid #333;
-    padding: 30px 0 10px;
-    margin: 0;
-    text-transform: uppercase;
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
 }
+
 .task-text {
-    margin: 0;
-    font-size: 18px;
-    line-height: 18px;
-    height: 21px;
-    padding: 0 9px;
-    border: 1px solid #dDd;
-    background: #FFF;
-    border-radius: 6px;
-    font-family: Lato, sans-serif;
-    color: #888;
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #dDd;
+  background: #FFF;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
 }
+
 .task-text:focus {
-    color: #333;
+  color: #333;
 }
 
 /* New Task */
 .add-task-title {
-    display: block;
-    margin: 0 0 20px;
+  display: block;
+  margin: 0 0 20px;
 }
+
 .add-task__input {
-    width: 318px;
+  width: 318px;
 }
 
 /* Task list */
 .tasks-item {
-    overflow: hidden;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .tasks-item > * {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .tasks-item > .task-checkbox {
-    margin: 0 10px;
+  margin: 0 10px;
 }
+
 .tasks-item > .task-label {
-    padding-left: 10px;
-    box-sizing: border-box;
-    font-size: 18px;
-    width: 226px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
 }
+
 .tasks-item > .task-text {
-    width: 226px
+  width: 226px
 }
+
 .btn-del__pic {
-    height: 2em;
-    transform: rotateZ(45deg);
-    transition: transform 200ms ease-in;
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
 }
+
 .btn-del__pic:hover {
-    transform: rotateZ(0);
+  transform: rotateZ(0);
 }
 
 /* Completed */
+
 ul#completed-tasks label {
-    text-decoration: line-through
-    color: #888;
+  text-decoration: line-through
+  color: #888;
 }
 
 /* Edit Task */
 
-
 .tasks-list  .edit-mode .task-text {
-    display:inline-block;
-    width:224px
+  display:inline-block;
+  width:224px
 }
 
